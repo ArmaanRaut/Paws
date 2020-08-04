@@ -11,14 +11,16 @@ body{
 /* header */
 header{
   height: 86vh;
-  background: linear-gradient(to right,#bbbdbd80,#f9f9f9,#bbbdbd80);
+  background: linear-gradient(to right, #8FBC8F,#8FBC8F80,#f9f9f9,#8FBC8F80,#8FBC8F);
 }
 header p .header-img{
   transition: all 0.5s ease-out;
 }
 header p .header-img:hover{
   transform: scale(1.5);
-}
+} 
+
+/* header end */
 /* eyes animation */
 header .dog .eyes{
   position: absolute;
@@ -59,6 +61,7 @@ header .dog  .eyes .eye .pupil .spark{
   transform: translate(-50%,-50%);
   border-radius: 50%;
 } 
+/* eyes animation */
 /* dog's body, face and features style */
 header .body {
   width: 250px;
@@ -99,7 +102,6 @@ header .earsBasic:after {
   border-right: 20px solid #e6ac4c;
   right: 0;
 }
-
 /* dog main styling */
 header .dog {
   left: 40%;
@@ -238,6 +240,22 @@ header .dog .features:before {
     transform: rotate(0);
   }
 }
+/* end of dog anumation */
+/* navbar extra hover animation */
+.navbar .navbar-brand{
+ transition: all 0.5 ease-out;
+}
+.navbar .navbar-brand:hover{
+  transform: scale(1.25);
+}
+.navbar div ul li{
+  transition: all 0.5 ease-out;
+}
+.navbar div ul li:hover{
+  transform: scale(1.1);
+  font-weight: 600;
+} 
+/* end navbar */
 /* main */
 .home{
   height: 100vh;
