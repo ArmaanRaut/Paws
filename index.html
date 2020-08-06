@@ -39,7 +39,7 @@
       </div>
       <div class="features"></div>
     </div>
-    <h1><span>"Welcome</span><span>to</span><span>Paws"</span></h1>
+    <h1 class="heading"><span class="heading-word">Welcome</span><span class="heading-word">to</span><span class="heading-word">Paws</span></h1>
   </header>
 
   <!-- navbar -->
@@ -74,7 +74,13 @@
           <a class="nav-link" href="contact.html">Contact us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
+          <a class="nav-link dropdown-toggle" id="loginDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="loginDrop">
+            <a class="dropdown-item" href="login.html">Login</a>
+            <a class="dropdown-item" href="login.html">Sign Up</a>
+          </div>
         </li>
       </ul>
     </div>
