@@ -466,6 +466,10 @@ header .dog .features:before {
   margin: 0 3px;
   cursor: pointer;
 }
+.home .indicator div:hover{
+  background-color: #000000;
+  border: 2px solid #fff;
+}
 /* active indicator circle */
 .home .indicator div.active{
   background-color: #000000;
