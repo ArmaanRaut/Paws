@@ -1,0 +1,26 @@
+/* Header styling */
+header{
+  height: 86vh;
+  background: radial-gradient( #f9f9f9,#8FBC8F80,#8FBC8F);
+}
+header p{
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+}
+header .heading{
+  position: relative;
+  top: 25%;
+}
+header p .header-img{
+  position: relative;
+  top: 50%;
+  margin: 0.5rem;
+  background: radial-gradient(#f9f9f9,#f9f9f980);
+  border-radius: 50%;
+  transition: all 0.5s ease-out;
+}
+header p .header-img:hover{
+  transform: scale(1.5);
+} 
+
