@@ -7,9 +7,15 @@ body{
   background-image: url(../img/Background.png);
   background-size: cover;
 }
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
 /* navbar extra hover animation */
 .navbar .navbar-brand{
- transition: all 0.8 ease-out;
+ transition: all 0.8s ease-out;
 }
 .navbar .navbar-brand:hover{
   transform: scale(1.25);
@@ -21,4 +27,41 @@ body{
   font-size: 110%;
   font-weight: 600;
 } 
+.navbar button{
+  border: none;
+}
+.navbar button span{
+  font-size: 26px;
+}
+.navbar button span:hover{
+  color: rgb(207, 207, 207);
+  font-size: 30px;
+  font-weight: 600;
+}
 /* end navbar */
+/* footer section */
+footer{
+  text-align: center;
+  background-color: #000000;
+}
+footer p{
+  display: inline-block;
+  color: #fff;
+  margin: 0;
+}
+footer ul{
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+footer ul li{
+  display: inline-block;
+}
+footer ul li a{
+  color: #fff;
+  padding-right: 0.5em;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+  color: #F5F5DC;
+}
+/* end of footer section */

@@ -72,6 +72,7 @@ header .heading .heading-word:last-child{
     transform: scale(0.6);
   }
 }
+/* Heading animation */
 /* eyes animation */
 header .dog .eyes{
   position: absolute;
@@ -380,12 +381,23 @@ header .dog .features:before {
   background: #000000;
   text-decoration: none;
   color: #FFFAF0;
+  transition: all 0.8s ease;
+}
+.home .caption a:hover{
+  background-color: #FFFAF0;
+  color: #000;
+  box-shadow: 0 0 10px #000;
 }
 /* For active caption */
 .home .slide.active .caption a{
   opacity: 0;
   animation: captionText 0.5s ease forwards;
   animation-delay: 1.4s;
+}
+@media(max-width: 992px){
+  .home .caption h1{
+    font-size: 35px;
+  }
 }
 @media(max-width: 767px){
   .container{
@@ -495,3 +507,192 @@ header .dog .features:before {
 }
 /* End of responsive design */
 /* end of home */
+/* info section */
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding-top: 95px;
+  background-image: linear-gradient(#00000080,#000000e0),url(../img/home-info.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F5F5DC;
+}
+.info .info-para{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  transition: all 0.8s ease;
+}
+.info .info-para p{
+  text-align: justify;
+}
+.info .info-para:hover{
+  background-color: #000000;
+  box-shadow: 0 0 20px #ffffff;
+  border-radius: 0 15px 0 15px;
+  border: 3px solid #fff;
+}
+.info .info-tabs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.info .info-tabs .info-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255, 0.5);
+  border-radius: 15px;
+  width: 188px;
+  height: 228px;
+  margin: 1rem;
+  transition: all 0.8s ease;
+}
+.info .info-tabs .info-tab img{
+  width: 175px;
+  height: 215px;
+  border-radius: 15px;
+}
+.info .info-tabs .info-tab img:hover{
+  border-radius: 0 15px 0 15px;
+}
+.info .info-tabs .info-tab:hover{
+  transform: scale(1.1);
+  background-color: #fff;
+  box-shadow: 0 0 20px #ffffff;
+  border-radius: 0 15px 0 15px;
+  border: 3px solid #000000;
+}
+@media(max-width:698px){
+  .info .info-tabs .info-tab:nth-child(2){
+    display: none;
+  }
+  .info{
+    height: 115vh;
+  }
+
+}
+/* end of info section */
+/* Adoption section */
+.adoption{
+  height: 60vh;
+  padding-top: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F5F5DC;
+}
+.adoption .adopt-data{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.adoption .adopt-data .image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #000000;
+  transition: all 0.8s ease;
+}
+.adoption .adopt-data .image:hover{
+  background-color: #000;
+  box-shadow: 0 0 20px #000000;
+}
+.adoption .adopt-data .image img{
+  width: 230px;
+  border: 3px solid #000000;
+  transform: scale(1.3);
+}
+
+.adoption .adopt-data .para{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 280px;
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  border: 2px solid #000000;
+  text-align: justify;
+  transition: all 0.8s ease;
+}
+.adoption .adopt-data .para:hover{
+  background-color: #000;
+}
+.adoption .adopt-data .para h3{
+  margin: 2rem 0 0 0;
+  padding: 0.2rem;
+  text-align: center;
+}
+@media(min-width:980px){
+  .adoption .adopt-data .image{
+    width: 400px;
+  }
+  .adoption .adopt-data .image img{
+    width: 280px;
+  }
+  .adoption .adopt-data .para{
+    width: 400px;
+  }
+  .adoption .adopt-data .para h3{
+    margin: 0 0 1rem 0;
+  }
+}
+@media(max-width:650px){
+  .adoption .adopt-data .image{
+    width: 200px;
+  }
+  .adoption .adopt-data .image img{
+    width: 180px;
+  }
+  .adoption .adopt-data .para{
+    width: 200px;
+    font-size: 12px;
+  }
+  .adoption .adopt-data .para h3{
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0 0;
+  }
+}
+/* End of adoption section */
+/* Help section */
+.help{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  background-image: url('../img/Contact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F5F5DC;
+}
+.help .contact{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.help .contact .contact-tab{
+  text-align: center;
+  background-color: #000000b0;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  transition: all 0.8s ease;
+}
+.help .contact .contact-tab:hover{
+  background-color: #000;
+  transform: scale(1.1);
+}
+/* End of help section */
+
