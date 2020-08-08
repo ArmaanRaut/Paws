@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/heading.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
@@ -18,8 +19,8 @@
   <!-- header -->
   <header>
     <p class="text-center"><img style="width: 150px;" class="header-img" src="img/logo.png" alt="Paws logo"></p>
-    <h1 class="heading"><span class="heading-word">Welcome</span><span class="heading-word">to</span><span
-      class="heading-word">Paws</span></h1>
+    <h1 class="heading"><span class="heading-word">Login</span><span class="heading-word">And</span><span
+        class="heading-word">Sign Up</span></h1>
   </header>
   <!-- header end -->
   <!-- navbar -->
@@ -44,7 +45,7 @@
         <li class="nav-item">
           <a class="nav-link" href="shelter.html">Our Shelter</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="breed.html">Popular Breeds</a>
         </li>
         <li class="nav-item">
@@ -53,7 +54,7 @@
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact us</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link dropdown-toggle" id="loginDrop" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <i class="fas fa-user"></i>
@@ -67,17 +68,75 @@
     </div>
   </nav>
   <!-- navbar end -->
-    <!-- footer section -->
-    <footer>
-      <p>Made with <i class="fas fa-paw"></i> by Armaan Raut.</p>
-      <ul>
-        <p>Find me at:</p>
-        <li> <a href="https://www.linkedin.com/in/armaan-raut-9a654715b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        <li> <a href="https://github.com/ArmaanRaut" target="_blank"><i class="fab fa-github-square"></i> GitHub</a></li>
-        <li> <a href="https://codepen.io/soullesscoder" target="_blank"><i class="fab fa-codepen"></i> CodePen</a></li>
-      </ul>
-    </footer>
-    <!-- end of footer -->
+  <div class="main">
+    <!-- login/signup -->
+    <div class="container" id="container">
+      <!-- Sign up form -->
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <!-- Sign in form -->
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forgot your password?</a>
+          <button>Login</button>
+        </form>
+      </div>
+      <!-- Overlay-->
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Login</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter yout personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of login/signup -->
+  </div>
+  <!-- js flie link -->
+  <script src="js/login.js"></script>
+  <!-- footer section -->
+  <footer>
+    <p>Made with <i class="fas fa-paw"></i> by Armaan Raut.</p>
+    <ul>
+      <p>Find me at:</p>
+      <li> <a href="https://www.linkedin.com/in/armaan-raut-9a654715b/" target="_blank"><i class="fab fa-linkedin"></i>
+          LinkedIn</a></li>
+      <li> <a href="https://github.com/ArmaanRaut" target="_blank"><i class="fab fa-github-square"></i> GitHub</a></li>
+      <li> <a href="https://codepen.io/soullesscoder" target="_blank"><i class="fab fa-codepen"></i> CodePen</a></li>
+    </ul>
+  </footer>
+  <!-- end of footer -->
 
   <!-- bootstrap js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
