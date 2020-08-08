@@ -1,0 +1,90 @@
+/* contact section */
+.contact{
+  margin: 1rem;
+}
+.contact .contact-box{
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contact .contact-box .contact-div:first-child{
+  background-image: url('../img/contact-box.jpg');
+  background-size: cover;
+  height: 560px;
+  width: 40%;
+  border-radius: 10px;
+  border: 5px solid #000000;
+}
+.contact .contact-box .contact-div h3{
+  color: #f9f9f9;
+  margin: 1.5rem;
+}
+.social-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.social-tab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem;
+  width: 40%;
+  border-radius: 10px;
+  border: 3px solid #f9f9f9;
+  color: #f9f9f9;
+  background-color: #000000a1;
+  transition: all 0.8s ease;
+}
+.social-tab:hover{
+  background-color: #000000;
+  transform: scale(1.1);
+}
+.social-tab i{
+  font-size: 35px;
+}
+.social-tab a{
+  color: #f9f9f9;
+  text-align: center;
+}
+.social-tab a:hover{
+  color: #F5F5DC;
+  text-decoration: none;
+}
+.contact .contact-box .contact-div:last-child{
+  width: 40%;
+}
+@media(max-width:964px){
+  .contact-div h3{
+    font-size: 1.62em;
+    margin: 0;
+  }
+  .social-tab{
+    width: 80%;
+  }
+}
+/* contact form */
+.contact-form{
+  background-color: #000000a1;
+  height: 560px;
+  padding: 0.5rem;
+  color: #f9f9f9;
+  border: 5px solid #000000;
+  border-radius: 10px;
+}
+.contact-form h3{
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form form .button{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.5rem;
+}
+/* end of contact */

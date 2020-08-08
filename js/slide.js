@@ -93,7 +93,7 @@ let index=0;
     // when click to indicator or controls button stop timer
     clearInterval(timer);
     // then started again timer
-    timer=setInterval(autoPlay,226000);
+    timer=setInterval(autoPlay,6000);
   }
 
   // autoplay function
@@ -102,5 +102,5 @@ let index=0;
     updateCircleIndicator();
   }
  // timer
-  let timer=setInterval(autoPlay,226000);
+  let timer=setInterval(autoPlay,6000);
 
