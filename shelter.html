@@ -12,6 +12,7 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
   <script src="https://kit.fontawesome.com/dd1e421363.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <title>Our Shelter</title>
 </head>
 
@@ -68,21 +69,77 @@
     </div>
   </nav>
   <!-- navbar end -->
+  <!-- rescue -->
   <div class="rescue">
-
+    <h1 class="heading" style="transform: scale(0.6);"><span class="heading-word">Why</i></span><span
+      class="heading-word">A</span><span class="heading-word">Rescue</span></h1>
+    <div class="rescue-data">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aliquid distinctio facere commodi iure, expedita dolorem molestiae aspernatur possimus asperiores.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio assumenda sit! Et amet, veniam quae cumque doloribus nam tempora.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor id temporibus! Nam, id aspernatur in aliquam est magnam aut distinctio dolor ut, nemo dolores?</p>
+    </div>
   </div>
+  <!-- end rescue -->
+  <!-- site counter -->
   <div class="site-counter">
-    <div class="row">
-      <div class="col-md-3">
-        <i class="fas fa-parachute-box"></i>
-        <p>25</p>
-        <p>Dogs Rescued</p>
+    <h1 class="heading" style="transform: scale(0.6);"><span class="heading-word">Our</i></span><span
+      class="heading-word">Website's</span><span class="heading-word">Progress</span></h1>
+    <div class="container counter-section">
+      <div class="counter-div text-center">
+        <div class="counter-box">
+          <div class="icon-box">
+            <i class="fas fa-parachute-box"></i>
+            <p class="counter">25</p>
+            <p>Dogs Rescued</p>
+          </div>
+        </div>
+        <div class="counter-box">
+          <div class="icon-box">
+            <i class="fas fa-home"></i>
+            <p class="counter">50</p>
+            <p>Families found</p>
+          </div>
+        </div>
+        <div class="counter-box">
+          <div class="icon-box">
+            <i class="fas fa-photo-video"></i>
+            <p class="counter">126</p>
+            <p>Images Posted</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <!-- end of site counter -->
+  <!-- jquery counter files and script tags -->
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script>
+    jQuery(document).ready(function( $ )
+    {
+      $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+      });
+    });
+  </script>
+  <!-- rescue form -->
   <div class="rescue-form">
-
+    <h1 class="heading" style="transform: scale(0.6);"><span class="heading-word">Apply</i></span><span
+      class="heading-word">For</span><span class="heading-word">Adoption</span></h1>
+    <div class="form-div">
+      <div class="data-txt">
+        <h3>Adopt a Rescue Dog</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="data-txt">
+        <h3>We will help</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <a href="shelter-form.html">Apply</a>
+    </div>
   </div>
+  <!-- end of rescue form -->
   <!-- footer section -->
   <footer>
     <p>Made with <i class="fas fa-paw"></i> by Armaan Raut.</p>

@@ -18,7 +18,7 @@
   <!-- header with the h1 heading and form description -->
   <header>
     <h1 class="heading"><span class="heading-word">Adoption</span><span class="heading-word">Form:</span><span
-      class="heading-word">Rescue</span></h1>
+        class="heading-word">Rescue</span></h1>
     <p class="description">
       Fill this form in order to apply for adoption of a rescue.
     </p>
@@ -75,44 +75,22 @@
       <!-- Div for next season list -->
       <div class="form-group">
         <p>
-          How many puppies you want to adopt?
+          How many dogs you want to adopt?
         </p>
-        <select name="puppyNumber" class="form-control" required>
+        <select name="dogNumber" class="form-control" required>
           <option disabled selected value>Select an option</option>
-          <option value="one">Just one puppy</option>
-          <option value="aPair">A pair of puppies</option>
-          <option value="moreThanOne">More than one puppy</option>
+          <option value="one">Just one dog</option>
+          <option value="aPair">A pair of dogs</option>
+          <option value="moreThanOne">More than two dogs</option>
         </select>
       </div>
 
-      <!-- Div for check-boxe question -->
-      <div class="form-group check-div">
-        <p>
-          Which breed/breeds you have decided on?
-        </p>
-        <label><input name="breedSelection" value="goldenRetriever" type="checkbox" class="form-check-label" /> Golden
-          Retriever</label>
-        <label>
-          <input name="breedSelection" value="labradorRetriever" type="checkbox" class="form-check-label" /> Labrador
-          Retriever</label>
-        <label><input name="breedSelection" value="germanShepherd" type="checkbox" class="form-check-label" /> German
-          Shepherd</label>
-        <label><input name="breedSelection" value="boxer" type="checkbox" class="form-check-label" /> Boxer</label>
-
-        <label><input name="breedSelection" value="bulldog" type="checkbox" class="form-check-label" /> Bulldog</label>
-
-        <label><input name="breedSelection" value="beagle" type="checkbox" class="form-check-label" /> Beagle</label>
-
-        <label><input name="breedSelection" value="dalmatian" type="checkbox"
-            class="form-check-label" />Dalmatian</label>
-
-        <label><input name="breedSelection" value="dobermanPinscher" type="checkbox" class="form-check-label" /> Doberman
-          Pinscher</label>
-
-        <label><input name="breedSelection" value="poodle" type="checkbox" class="form-check-label" /> Poodle</label>
-
-        <label><input name="breedSelection" value="Collie" type="checkbox" class="form-check-label" /> Collie</label>
+      <!-- Div for text area question -->
+      <div class="form-group">
+        <p>Why do you want to adopt a rescue dog?</p>
+        <textarea name="comment" class="form-control" rows="3" placeholder="Answer here..." required></textarea>
       </div>
+
       <!-- Div for submit button -->
       <div class="form-group button">
         <button type="submit" class="btn btn-primary">

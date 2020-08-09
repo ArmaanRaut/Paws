@@ -528,7 +528,7 @@ header .dog .features:before {
   padding: 1rem;
   margin: 1rem;
   text-align: center;
-  transition: all 0.8s ease;
+  transition: all 0.8s ease-in-out;
 }
 .info .info-para p{
   text-align: justify;
@@ -536,7 +536,6 @@ header .dog .features:before {
 .info .info-para:hover{
   background-color: #000000;
   box-shadow: 0 0 20px #ffffff;
-  border-radius: 0 15px 0 15px;
   border: 3px solid #fff;
 }
 .info .info-tabs{
