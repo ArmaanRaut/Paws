@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+  <script src="https://kit.fontawesome.com/dd1e421363.js" crossorigin="anonymous"></script>
+  <title>Adoption Form</title>
+</head>
+
+<body>
+  <!-- form -->
+  <div class="content">
+    <!-- header with the h1 heading and form description -->
+    <header>
+      <h1 id="title" class="title">Dog Adoption Form:Puppy</h1>
+      <p id="description" class="description">
+        Thank you for helping our club by taking this survey.
+        <br> We appreciate your time and are happy to have you as a fan.
+      </p>
+    </header>
+
+    <!-- The main form body -->
+    <form id="survey" class="survey">
+
+      <!-- Div for name label and input -->
+      <div class="group">
+        <label id="name" class="name" for="name">Name</label>
+        <input type="text" name="name" id="name" class="control" placeholder="Enter your name" required />
+      </div>
+
+      <!-- Div for email label and input -->
+      <div class="group">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="control" placeholder="Enter your Email" required />
+      </div>
+
+      <!-- Div for age label and input -->
+      <div class="group">
+        <label for="number" id="number-label">
+          Age <span>(optional)</span>
+        </label>
+        <input type="number" name="age" id="number" min="5" max="110" class="control" placeholder="Age" />
+      </div>
+
+      <!-- Div for place list -->
+      <div class="group">
+        <p>Where are you from?</p>
+        <select name="place" id="dropdown" class="control" required>
+          <option disabled selected value>Select one of the options</option>
+          <option value="chealsea">Chelsea</option>
+          <option value="london">London(not Chelsea)</option>
+          <option value="uk">UK</option>
+          <option value="europe">Europe</option>
+          <option value="rotw">Rest of the world</option>
+        </select>
+      </div>
+
+      <!-- Div for radio-button question -->
+      <div class="group">
+        <p>Do you see us gettung a top four finish to this season?</p>
+        <label>
+          <input name="fan-views" value="definitely" type="radio" class="radio" checked />Definitely
+        </label>
+
+        <label>
+          <input name="fan-views" value="maybe" type="radio" class="radio" />Maybe
+        </label>
+
+        <label>
+          <input name="fan-views" value="not-sure" type="radio" class="radio" />Not Sure
+        </label>
+      </div>
+
+      <!-- Div for next season list -->
+      <div class="group">
+        <p>
+          Where do you see us for next season?
+        </p>
+        <select id="next-Season" name="nextSeason" class="control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="champ">Competing for UCL or League Title</Title>
+          </option>
+          <option value="topfour">Top four</option>
+          <option value="mid">Mid Table</option>
+          <option value="bottom">Bottom half</option>
+          <option value="relegation">Relegation</option>
+        </select>
+      </div>
+
+      <!-- Div for check-boxe question -->
+      <div class="group">
+        <p>
+          What position our them needs to invest?
+          <span>(Check all that apply)</span>
+        </p>
+
+        <label><input name="prefer" value="goalkeeper" type="checkbox" class="checkbox" />Goalkeeper</label>
+        <br>
+        <label>
+          <input name="prefer" value="defender" type="checkbox" class="checkbox" />Defender</label>
+        <br>
+        <label><input name="prefer" value="rightback" type="checkbox" class="checkbox" />Right-Back</label>
+        <br>
+        <label><input name="prefer" value="leftback" type="checkbox" class="checkbox" />Left-Back</label>
+        <br>
+        <label><input name="prefer" value="defensivemid" type="checkbox" class="checkbox" />Defensive-Midfielder</label>
+        <br>
+        <label><input name="prefer" value="centermid" type="checkbox" class="checkbox" />Center-Midfielder</label>
+        <br>
+        <label><input name="prefer" value="attackingmid" type="checkbox" class="checkbox" />Attacking-Midfielder</label>
+        <br>
+        <label><input name="prefer" value="rightwing" type="checkbox" class="checkbox" />Right-Wing</label>
+        <br>
+        <label><input name="prefer" value="striker" type="checkbox" class="checkbox" />Striker</label>
+        <br>
+        <label><input name="prefer" value="leftwing" type="checkbox" class="checkbox" />Left-Wing</label>
+        <br>
+        <label><input name="prefer" value="substitute" type="checkbox" class="checkbox" />Substitute</label>
+      </div>
+
+      <!-- Div for text area question -->
+      <div class="group">
+        <p>Any comments or messeages to the club or for the players?</p>
+        <textarea id="comments" class="textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <!-- Div for submit button -->
+      <div class="group">
+        <button type="submit" id="submit" class="button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <!-- End of form -->
+  <footer>
+    <p>Made with <i class="fas fa-paw"></i> by Armaan Raut.</p>
+    <ul>
+      <p>Find me at:</p>
+      <li> <a href="https://www.linkedin.com/in/armaan-raut-9a654715b/" target="_blank"><i class="fab fa-linkedin"></i>
+          LinkedIn</a></li>
+      <li> <a href="https://github.com/ArmaanRaut" target="_blank"><i class="fab fa-github-square"></i> GitHub</a></li>
+      <li> <a href="https://codepen.io/soullesscoder" target="_blank"><i class="fab fa-codepen"></i> CodePen</a></li>
+    </ul>
+  </footer>
+  <!-- end of footer -->
+  <!-- bootstrap js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+/* adoption */
+.adoption{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.adoption .adoption-txt{
+  text-align: justify;
+  color: #ffffff;
+  background: #00000080;
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 10px;
+  border:3px solid #000000;
+  transition: all 0.8s ease-in-out;
+}
+.adoption .adoption-txt:hover{
+  background: #000000;
+  transform: scale(1.1);
+}
+/* adoption end */
+/* procedure */
+.procedure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: url('../img/procedure.jpg') no-repeat 0 0 / cover;
+}
+.procedure .procedure-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.procedure .procedure-div .steps{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background: #00000080;
+  padding: 0.5rem;
+  width: 30%;
+  border-radius: 10px;
+  border:3px solid #000000;
+  transition: all 0.8s ease-in-out;
+}
+.procedure .procedure-div .steps:hover{
+  background: #000000;
+  transform: scale(1.1);
+}
+/* procedure end */
+/* Breeds */
+.avail-breeds{
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.breed-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.breed-list .dog{
+  margin: 0.5rem;
+  border-radius: 10px;
+  width: 225px;
+  background-color: #f9f9f9; 
+  box-shadow: 0 0 20px #000000;
+  transition: all 0.8s ease-in-out; 
+}
+.breed-list .dog:hover{
+  transform: scale(1.025);
+  box-shadow: 0 0 40px #000000;
+}
+.breed-list .dog .desc{
+  color: #000;
+  text-align: center;
+  padding: 0.25rem;
+}
+.breed-list .dog img{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.avail-breeds h3{
+  margin: 1rem;
+  background: #000000;
+  padding: 0.5em 1.5em;
+  color: #ffffff;
+  border-radius: 20px;
+}
+.avail-breeds a{
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #8FBC8F;
+  padding: 1rem 1.5rem;
+}
+.avail-breeds a{
+  transform: scale(0.95);
+}
+.avail-breeds a:hover{
+  background: #8FBC28;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Breeds end */
+

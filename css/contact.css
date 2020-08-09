@@ -25,7 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-content: center;
+  align-items: center;
 }
 
 .social-tab{
@@ -81,10 +81,18 @@
   margin: 0;
   padding: 0;
 }
-
 .contact-form form .button{
   display: flex;
   justify-content: space-evenly;
   margin: 0.5rem;
+}
+.button .btn{
+  background-color: #8FBC8F;
+}
+.button .btn:active{
+  transform: scale(0.95);
+}
+.button .btn:hover{
+  background: #8FBC28;
 }
 /* end of contact */

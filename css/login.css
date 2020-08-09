@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   margin: -20px 0 50px;
 }
 /* container */
@@ -67,6 +67,10 @@
   height: 40px;
   width: 40px;
 }
+.social-container a:hover{
+  text-decoration: none;
+  transform: scale(1.2);
+}
 .form-container input{
   background: #eee;
   border: none;
@@ -92,9 +96,15 @@
 .container button:focus{
   outline: none;
 }
+.container button:hover{
+  background: #8FBC28;
+}
 .container button.ghost{
   background: transparent;
   border-color: #ffffff;
+}
+.container button.ghost:hover{
+  background: #000000;
 }
 .form-container{
   position: absolute;
@@ -124,7 +134,6 @@
   transition: transform 0.6s ease-in-out;
   z-index: 100;
 }
- 
 .overlay{
   background: #8FBC8F;
   background: linear-gradient(to right, #8FBC8F,#8FBC28) no-repeat 0 0 / cover;
@@ -156,7 +165,7 @@
   background: linear-gradient(#0000002f,#000000d0),url('../img/login-r.jpg') no-repeat 0 0 / cover;
 }
 .overlay-left{
-  transform: translateX(0);
+  transform: translateX(-20%);
   background: linear-gradient(#0000002f,#000000d0),url('../img/login-l.jpg') no-repeat 0 0 / cover;
 }
 
@@ -180,3 +189,11 @@
   transform: translateX(50%);
 } 
 
+.container.right-panel-active .overlay-left{
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right{
+  transform: translateX(20%);
+}
+/* End main */

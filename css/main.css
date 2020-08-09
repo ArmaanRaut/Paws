@@ -30,6 +30,9 @@ li{
 .navbar button{
   border: none;
 }
+.navbar button:focus{
+  outline: none;
+}
 .navbar button span{
   font-size: 26px;
 }
