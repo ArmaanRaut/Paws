@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/heading.css">
+  <link rel="stylesheet" href="css/adopt-form.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+  <script src="https://kit.fontawesome.com/dd1e421363.js" crossorigin="anonymous"></script>
+  <title>Adoption Form:Rescue</title>
+</head>
+
+<body>
+  <!-- header with the h1 heading and form description -->
+  <header>
+    <h1 class="heading"><span class="heading-word">Adoption</span><span class="heading-word">Form:</span><span
+      class="heading-word">Rescue</span></h1>
+    <p class="description">
+      Fill this form in order to apply for adoption of a rescue.
+    </p>
+  </header>
+  <!-- form -->
+  <div class="content">
+    <!-- The main form body -->
+    <form action="index.html" class="Adopt-p">
+
+      <!-- Div for name label and input -->
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <!-- Div for email label and input -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter your Email" required />
+      </div>
+      <!-- Dic for phone label and input -->
+      <div class="form-group">
+        <label for="Phone">Phone:</label>
+        <input type="tel" name="phone" class="form-control" size="10" pattern="[0-9]{5}-[0-9]{5}" value="+91"
+          required />
+      </div>
+      <!-- Div for place list -->
+      <div class="form-group">
+        <p>Where do you live?</p>
+        <select name="place" class="form-control" required>
+          <option disabled selected value>Select one of the options</option>
+          <option value="appartment">Appartment</option>
+          <option value="townhome">Townhome</option>
+          <option value="bungalow">Bungalow</option>
+          <option value="mansion">Mansion</option>
+        </select>
+      </div>
+
+      <!-- Div for radio-button question -->
+      <div class="form-group radio-div">
+        <p>Do you own pets?</p>
+        <label>
+          <input name="pet-owner" value="No" type="radio" class="form-check-label" checked /> No Pets
+        </label>
+
+        <label>
+          <input name="pet-owner" value="Yes-dogs" type="radio" class="form-check-label" /> Yes(dogs)
+        </label>
+
+        <label>
+          <input name="pet-owner" value="Yes-others" type="radio" class="radio" /> Yes(others)
+        </label>
+      </div>
+
+      <!-- Div for next season list -->
+      <div class="form-group">
+        <p>
+          How many puppies you want to adopt?
+        </p>
+        <select name="puppyNumber" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="one">Just one puppy</option>
+          <option value="aPair">A pair of puppies</option>
+          <option value="moreThanOne">More than one puppy</option>
+        </select>
+      </div>
+
+      <!-- Div for check-boxe question -->
+      <div class="form-group check-div">
+        <p>
+          Which breed/breeds you have decided on?
+        </p>
+        <label><input name="breedSelection" value="goldenRetriever" type="checkbox" class="form-check-label" /> Golden
+          Retriever</label>
+        <label>
+          <input name="breedSelection" value="labradorRetriever" type="checkbox" class="form-check-label" /> Labrador
+          Retriever</label>
+        <label><input name="breedSelection" value="germanShepherd" type="checkbox" class="form-check-label" /> German
+          Shepherd</label>
+        <label><input name="breedSelection" value="boxer" type="checkbox" class="form-check-label" /> Boxer</label>
+
+        <label><input name="breedSelection" value="bulldog" type="checkbox" class="form-check-label" /> Bulldog</label>
+
+        <label><input name="breedSelection" value="beagle" type="checkbox" class="form-check-label" /> Beagle</label>
+
+        <label><input name="breedSelection" value="dalmatian" type="checkbox"
+            class="form-check-label" />Dalmatian</label>
+
+        <label><input name="breedSelection" value="dobermanPinscher" type="checkbox" class="form-check-label" /> Doberman
+          Pinscher</label>
+
+        <label><input name="breedSelection" value="poodle" type="checkbox" class="form-check-label" /> Poodle</label>
+
+        <label><input name="breedSelection" value="Collie" type="checkbox" class="form-check-label" /> Collie</label>
+      </div>
+      <!-- Div for submit button -->
+      <div class="form-group button">
+        <button type="submit" class="btn btn-primary">
+          Apply
+        </button>
+        <button type="reset" class="btn btn-primary">
+          Reset
+        </button>
+      </div>
+    </form>
+  </div>
+  <!-- End of form -->
+  <footer>
+    <p>Made with <i class="fas fa-paw"></i> by Armaan Raut.</p>
+    <ul>
+      <p>Find me at:</p>
+      <li> <a href="https://www.linkedin.com/in/armaan-raut-9a654715b/" target="_blank"><i class="fab fa-linkedin"></i>
+          LinkedIn</a></li>
+      <li> <a href="https://github.com/ArmaanRaut" target="_blank"><i class="fab fa-github-square"></i> GitHub</a></li>
+      <li> <a href="https://codepen.io/soullesscoder" target="_blank"><i class="fab fa-codepen"></i> CodePen</a></li>
+    </ul>
+  </footer>
+  <!-- end of footer -->
+  <!-- bootstrap js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
