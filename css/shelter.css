@@ -12,7 +12,6 @@
   color: #F5F5DC;
   width: 75%;
   padding: 1rem;
-  border: 3px solid #000000;
   border-radius: 20px;
   text-align: justify;
   transition: all 0.8s ease-in-out;
@@ -31,7 +30,7 @@
 .counter-section{
   position: relative;
   top: 40%;
-  color: #ffffff;
+  color: #F5F5DC;
   transform: translateY(-50%);
 }
 .counter-section .counter-div{
@@ -61,7 +60,7 @@
 .icon-box .fas{
   font-size: 30px;
   margin: 25px auto;
-  color: #ffffff;
+  color: #F5F5DC;
 }
 .icon-box .counter{
   font-size: 40px;
@@ -75,7 +74,53 @@
 /* end of site counter */
 /* rescue form */
 .rescue-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   height: 80vh;
+  background: radial-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.8));
+}
+.form-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1.5rem;
+  height: 80%;
+  background: url('../img/rescue-form.jpg') no-repeat 0 0 / cover;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px #fff;
+}
+.form-div .data-txt{
+  color: #F5F5DC;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 20px #000000;
+  transition: all 0.8s ease-in-out;
+}
+.form-div .data-txt:hover{
+  transform: scale(1.1);
+  background-color: #000000;
+}
+.form-div a{
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #8FBC8F;
+  padding: 1rem 1.5rem;
+}
+.form-div a{
+  transform: scale(0.95);
+  box-shadow: 0 0 20px #000000;
+}
+.form-div a:hover{
+  background: #8FBC28;
+  color: #ffffff;
+  text-decoration: none;
 }
 /* end of rescue form */
 
